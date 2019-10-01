@@ -1,0 +1,594 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{setspace}
+\usepackage[bottom]{footmisc}
+
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\usepackage[labelfont=bf]{caption}
+
+\title{\textbf{Project Design Decisions of Egalitarian and Non-Egalitarian International Organizations: \\ Evidence from the Global Environment Facility \\ and the World Bank} \\[2ex]}
+
+\author{\textbf{Alice Iannantuoni}$^*$ \\ \href{mailto:iannntn2@illinois.edu}{iannntn2@illinois.edu} \and \textbf{Charla Waeiss}$^\dagger$ \\ \href{mailto:waeiss@stanford.edu}{waeiss@stanford.edu} \and \textbf{Matthew S. Winters}$^*$ \\ \href{mailto:mwinters@illinois.edu}{mwinters@illinois.edu}}
+
+\date{%
+	*Department of Political Science, University of Illinois at Urbana-Champaign\\
+	$^\dagger$Hoover Institution, Stanford University\\[4ex]%
+	% \today
+	September 2019
+}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+	
+	\maketitle
+	
+	\abstract{Foreign aid flows result from agreements reached between states that need resources and other states or international organizations that can provide those resources.  Recent literature has argued that different international development organizations bargain with aid-receiving states in particular ways.  Specifically, some authors argue that non-egalitarian international development organizations seek to secure more gains when bargaining with economically weak states.  Global Environment Facility projects are negotiated by the international agency that will implement the project, allowing us to examine this claim in the context of a set of similar development projects.  Correcting and reanalyzing an existing dataset describing the composition of financing in GEF projects, we find no evidence that the financing terms provided by different GEF implementing agencies varies by the type of organization.  Both egalitarian and non-egalitarian agencies provide more external funding to poorer countries.  We replicate this result using data from development projects financed by the World Bank, the archetypal non-egalitarian international organization.  We discuss how our results are consistent with organizational behavior that originates in the interests of an international bureaucracy oriented toward poverty alleviation.}
+	
+	\
+	
+	\noindent \textbf{Keywords:} international organizations; bargaining; counterpart funding; foreign aid; Global Environment Facility; World Bank
+	
+	
+	\vfill \noindent Thank you to Çağlayan Başer, Ekrem Başer, Patrick Bayer, Nuole Chen, and Johannes Urpelainen for comments on previous drafts.  Thank you also to Miles Williams, Abigail Staab, Mya Khoury, and Ethan Amberguey, who served as research assistants on this project. Preliminary and incomplete: please do not distribute without permission.
+
+	
+	
+\newpage
+\doublespacing 
+
+\section{Introduction}
+Popular discourse often describes developing countries as being “forced” to accept foreign aid programs and the conditions contained within them; academic analyses similarly tend to portray donors as making decisions about funding commitments, and aid recipients automatically accepting those decisions.  In reality, however, many foreign aid projects---and particularly those involving international organizations---result from negotiations between international development partners and the governments in developing countries.  As one seminal paper in the study of foreign aid argues, “Despite conventional wisdom that portrays borrowing countries as helpless in the face of a unified ‘Northern Bloc,’ developing countries often---if not always---have significant leverage over the architecture of the final loan document” (Nielson and Tierney 2003, p. 265).
+
+Recent literature on foreign aid has sought to characterize this bargaining and the agreements that result from it (Bueno de Mesquita and Smith 2007, 2009; Bayer et al. 2015; Wang 2016, 2018).  This literature highlights both that we might expect certain kinds of aid-receiving states to have leverage to strike better or worse bargains and also that we might expect different kinds of international organizations to pursue different bargaining outcomes depending on the aid-receiving state with which they are bargaining.
+Bayer, Marcoux, and Urpelainen (2015) describe international development organizations as having either egalitarian or non-egalitarian voting structures and argue that the two types of organizations will behave differently in bargaining with aid-seeking states.  They propose that non-egalitarian organizations, such as the World Bank, will work to secure more gains when they bargain with economically weak states.  By asking aid-receiving states with less bargaining power to pay a larger share of project costs, an international development organization would be able to implement more and larger projects.  Studying variation in the distribution of costs within Global Environment Fund (GEF) projects that involve implementing agencies with either non-egalitarian or egalitarian voting structures, Bayer, Marcoux, and Urpelainen (2015) find an apparent positive correlation between the size of a country’s economy and the GEF funding share when the non-egalitarian World Bank is the implementing agency for the project.   
+
+The idea that international development organizations would show this type of favoritism toward economically powerful aid-receiving countries is surprising.  These organizations are charged with facilitating economic development in countries struggling with it.  Reexamining the data used by Bayer, Marcoux, and Urpelainen (2015), we show that their measure of the division of project costs looks only at GEF funding rather than at the combined external funding from the GEF, the implementing agency, and other foreign funders.  When we correct the data to study the total external funding in GEF projects, we find that countries with larger economies contribute more of their own resources to projects of a given size.  We find that this result holds for both GEF implementing agencies with egalitarian voting structures and those with non-egalitarian voting structures.  We show that the negative relationship is even more pronounced when studying the aid recipient’s GDP per capita (a measure of economic development) as the main explanatory variable, as opposed to GDP (a measure of the size of a country’s economy).  We then show that similar results obtain when studying the breakdown of financing in regular World Bank projects.  Overall, these results cast doubt on the claim that non-egalitarian international development organizations try to capture a larger share of bargaining gains when interacting with economically weaker countries and provide evidence that these organizations are in fact operating in accordance with their development mandate when it comes to divvying up the costs of development interventions.  In the conclusion, we discuss how these results are consistent with a model in which organizational behavior originates in the interests of a bureaucracy interested in poverty alleviation.
+
+
+
+\section{Bargaining Over Development Project Design}
+International development assistance takes the form of wealthy (or middle-income) countries transferring resources to poorer countries, either directly as bilateral aid or else indirectly through multilateral organizations.\footnote{Milner (2006) explores why states choose to provide development financing through multilateral organizations, while McLean (2012) and Schneider and Tobin (2016) examine which multilateral organizations donor states choose to send resources through.  See also Martens (2005) on differentiation across international development organizations.} There is variation in how international development programs are implemented: sometimes bilateral and multilateral aid agencies transfer funds to a government while on other occasions they provide financing to a private contractor or non-governmental organization to implement a development intervention (Dietrich 2013).  In either case, there is usually an explicit understanding with the recipient government about how much financing will be provided, for what purposes, and subject to what sorts of oversight and control mechanisms (Winters 2010).
+
+The specific characteristics of aid programs often are subject to bargaining between the aid-receiving governments and the donor.  Recipients may prefer that foreign aid projects be targeted at politically important regions of the country (Briggs 2012, 2014, 2017; Jablonski 2014), whereas donors might prefer to target the poorest areas of the country (Azam and Laffont 2003) or a set of regions that are relevant for specific political ends (Winters 2012).  Recipients may prefer to have foreign financing run through government systems, whereas foreign aid donors may prefer the greater control that they have if they establish parallel implementing units (Dietrich 2013, 2016; Godfrey et al. 2002; Knack and Rahman 2007). 
+
+In addition, aid-receiving governments and donors may bargain over policy concessions that the aid-receiving government gives in exchange for the foreign financing (Bueno de Mesquita and Smith 2007, 2009; Wang 2016, 2018).  These policy concessions may be changes in economic policy that benefit the donor country or else concessions related to the military or geostrategic interests of the donor country.  In a classic article, Morgenthau (1962) argues that certain foreign policy objectives can be achieved only through such aid-for-policy deals. 
+
+This literature makes claims about what types of states will receive and what kinds of international development organizations will offer better or worse bargains.  Bueno de Mesquita and Smith (2007, 2009) argue that poor, small-winning-coalition countries are most likely to receive aid but that the magnitude of the aid flows increases as winning-coalition size, wealth, and the salience of the policy concessions to the donor increase.  Wang (2016, 2018) uses a stochastic frontier analysis to identify the bargaining surplus associated with agreements about aid flows and finds that democracies and countries experiencing a civil war extract more of the surplus, while U.S. allies extract less.  Bayer, Marcoux, and Urpelainen (2015) distinguish between international organizations with egalitarian and non-egalitarian voting schemes and argue that organizations of each type respond differently to an aid-receiving state’s economic power.\footnote{An egalitarian voting scheme is most commonly one country, one vote, whereas non-egalitarian voting schemes typically weight a state’s vote by its level of financial contributions to the international organization.  The United Nations exemplifies the former, whereas the World Bank exemplifies the latter.}   
+
+Bayer, Marcoux, and Urpelainen (2015) assume that the overall value of having a project realized is greater than the overall costs of the project and use the Nash (1950) bargaining model to study the division of the resulting surplus between the international development organization and the aid-receiving state.  The authors assume that each side wants to contribute as little as possible while still having the project realized, that states have different levels of bargaining power, and that non-egalitarian organizations are more sensitive to bargaining power.  From this set of assumptions, it follows directly that non-egalitarian organizations will realize deals where states with weaker bargaining power contribute more toward the total costs of a project.
+
+Although the literature on foreign aid allocation sometimes appears to treat foreign aid as an always-desirable flow of “free” money, Bayer, Marcoux, and Uprelainen (2015) begin from the important observation that aid-receiving countries often contribute domestic resources to the realization of a development intervention funded with foreign aid (see also Over 1981; Pallage and Robe 2015; Kotchen and Negi 2016; Winters and Streitfeld 2018).  In their model, a project will come to fruition only if a sufficient total amount of money is provided by both the donor and the aid-receiving country.\footnote{The model allows for corner solutions in which one actor or the other provides the entirety of the financing.} 
+
+Empirically, the authors operationalize the bargaining power of an aid-seeking state as the overall size of its economy (i.e., its gross domestic product (GDP)), and they provide empirical evidence that the division of costs in some Global Environment Facility projects varies with GDP: as GDP rises, the share of the project financed by the GEF rises.  Crucially for their key claim about variation across types of international development organizations, they find that this is true only for GEF projects implemented by the World Bank, a non-egalitarian institution.  Among projects implemented by U.N. agencies or regional development banks, the level of GEF financing does not vary with the size of the aid-receiving country’s economy.\footnote{In the main text, Bayer, Marcoux, and Uprelainen (2015) include regional development banks with U.N. agencies despite the fact that regional development banks tend to have non-egalitarian voting structures.  In the Online Appendix to the article, they show that their results are in fact stronger when they compare all development banks against the U.N. agencies (section 23).}   The authors raise the normative concern that this favoritism toward economically powerful countries by the World Bank means that fewer resources are available for less powerful, likely poorer countries.
+ 
+We find these results surprising for two reasons.  First, staff making project-level decisions in international development organizations are likely motivated by development objectives and therefore are likely to resist making burdensome demands of countries with fewer resources (i.e., countries with smaller economies or poorer countries).\footnote{That said, working in the poorest countries in the world comes with risks: projects may be less likely to meet their development objectives in difficult environments (Honig 2018).  This might drive bureaucrats interested in promotion to be more hesitant about allocating funds to the poorest countries.  We appreciate a reviewer pointing out this competing tension to us.}   While pressure from powerful principals appears often to drive overall aid allocation and policy innovations within international development organizations (Andersen et al. 2006; Fleck and Kilby 2006; Weaver 2008; Copelovitch 2010; Stone 2011; Clegg 2013; Lim and Vreeland 2013; Vreeland and Dreher 2014), day-to-day operational decisions, such as those about the division of project financing between the donor and the recipient, are more likely to be driven by the preferences of individual bureaucrats.\footnote{See Sharma (2013) for an argument that even major policy innovations in international development organizations may originate in bureaucratic pressure.}   
+
+Second, rather than trying to limit the levels of financing that an international development organization provides, we expect development agency staff to be motivated by disbursement pressure to maximize the amount of money that they can reasonably dedicate to any given project (Easterly 2002; Woods 2006).  Other literature on the way that project costs get divvied up between international development organizations and aid-receiving states, for instance, treats development organizations not so much as resource misers, trying to protect the pool of resources that they might disburse, but rather as development-oriented actors trying to ensure that any money dedicated to a development intervention is used wisely (Over 1981; Pallage and Robe 2015; Kotchen and Negi 2016; Winters and Streitfeld 2018).
+
+Based on these alternative assumptions about what types of projects will maximize utility for bureaucrats within international development agencies, we expect that international development organizations will negotiate projects in which poorer countries, relative to wealthier countries, contribute lower levels of domestic financing for a given amount of external financing.  We expect this pattern to hold regardless of the voting structure of the international development organization involved in the project.  Although we acknowledge that different international development organizations have different bureaucratic cultures and that the background characteristics of staff often vary across organizations, we are not aware of a bureaucratic characteristic correlated with voting structure that would also correlate with the propensity to extract more or less of a bargaining surplus during project negotiations.  Therefore, we expect that projects overseen by international development organizations with either egalitarian or non-egalitarian voting structures will feature the same pattern of supplying more international funding to poorer countries for a given contribution made by those countries.
+Using a corrected version of the replication data for Bayer, Marcoux, and Uprelainen (2015), we reexamine the evidence from the original context studied by those authors, Global Environment Facility projects from the period 1991 to 2011.  As in the original article, we examine whether or not there is variation across GEF implementing agencies with egalitarian and non-egalitarian voting structures.  We then extend the analysis to World Bank projects from the period 1999 to 2016; as described above, the World Bank is an international development organization with a non-egalitarian voting structure.  In both cases, we find that levels of external financing fall as countries become wealthier (i.e., poorer countries contribute less domestic resources relative to a given level of foreign resources in a project), and for GEF projects, we find no evidence of variation across implementing agencies with different voting structures.  Before we present our empirical analyses, we describe the GEF financing mechanism and the GEF cofinancing data in more depth.
+
+
+
+\section{Project Financing through the GEF}
+The Global Environment Facility was established in 1991 to help protect the global environment and support sustainable development.\footnote{  This paragraph and the next draw on Marcoux, Peeters, and Tierney (2012).}   During an initial pilot phase, the World Bank administered the GEF trust fund and coordinated GEF activities.  The formal voting structure for the organization during this time was an egalitarian one-country, one-vote system.  GEF projects were initially implemented by the World Bank, the United Nations Development Programme (UNDP), or the United Nations Environment Programme (UNEP).  Funding for individual projects came from the GEF Trust Fund usually with additional financing provided by the country in which the project would be located, the organization acting as the implementing agency, and/or other foreign entities.
+
+In 1994, the GEF was reconstituted as an independent international organization with a four-year funding cycle.  The formal voting system for the independent GEF became a double-majority regime in which more than 60 percent of the states that are members of the GEF and states representing more than 60 percent of total contributions given to the GEF over its history must vote to approve major decisions; the GEF itself therefore combines the egalitarian and non-egalitarian models.  Over the past 20 years, regional development banks and other U.N. agencies have come to be included in the set of implementing agencies for GEF projects.   
+
+As of 2016, more than \$13.5 billion in grants had been provided by the GEF trust fund, and the GEF asserts that these grants have helped leverage \$65 billion worth of cofinancing (Kotchen and Negi 2016).  Cofinancing began increasing after a 2003 revision of policies (Miller and Yu 2012).\footnote{Cofinancing policies were revised again in 2014 (Kotchen and Negi 2016) and 2018 (authors’ interviews, October 2018).}   
+
+According to interviews with technocrats inside the GEF secretariat,\footnote{At the time of the interviews, the subjects held the positions of Operations Analyst, Biodiversity Specialist, and Environmental Specialist.} cofinancing arrangements and other project characteristics are largely decided in negotiations between the implementing agency and the project country.  One subject said that the GEF itself “remains quite removed from the process of project development,” while the other two subjects spoke about project proposals arriving with proposed cofinancing arrangements on which the GEF may provide comments (authors’ interviews, October 2018).  The comments by the interviewees reflect stated GEF policy: “The [Implementing] Agency prepares a project concept at the request of and in consultation with relevant country institutions and other relevant partners” (Global Environment Facility 2016, p. 10).  As is true in other contexts where development agencies seek country cofinancing, cofinancing is viewed as a sign of the project country’s commitment to the project (Over 1981; Winters and Streitfeld 2018).
+
+Because of this interest in understanding how GEF grants might catalyze funds from other sources, several existing papers have studied the cofinancing activity in GEF projects.  Both Miller and Yu (2012) and Kotchen and Negi (2016) show that recipient-country cofinancing is higher in projects implemented by the multilateral development banks, as compared to those implemented by U.N. agencies.  The two studies also show that projects classified as climate change projects attract more cofinancing and that the proportion of project financing that comes from cofinancing is larger in projects that have larger overall budgets.  Kotchen and Negi (2016) find mixed results for whether or not quality of governance predicts cofinancing.  Looking at the effects of cofinancing, Kotchen and Negi (2016) find that projects with greater cofinancing are more likely to achieve a satisfactory rating.\footnote{For other examinations of the links between cofinancing and aid effectiveness, see Shin et al. (2017) and Winters (2019).} 
+
+Bayer, Marcoux, and Urpelainen (2015) use data on GEF cofinancing to study the predictors of the amount of GEF financing relative to total project costs.  As described above, they argue that a country’s bargaining power---conceptualized as the size of its economy---will positively predict the share of the project that is funded by the GEF for projects where the World Bank is the implementer but not for projects with other implementers.\footnote{Although the authors sometimes characterize their study as being about “bargaining between the Global Environment Facility (GEF) and … recipients” (Bayer et al. 2015, p. 1076), the way that they conduct their analysis coheres with the idea that the implementing agencies negotiate with project countries.} Controlling for total project size, whether or not a project is a climate-change project, the level of corruption in the project country, whether or not the country is democratic, and region and year fixed effects, they find that GDP positively predicts the proportion of total project financing provided by the GEF for GEF projects implemented by the World Bank, while the same relationship is small, negative, and not significant for GEF projects implemented by other agencies.  The authors interpret this as evidence supportive of H1 in their paper: “The IO’s funding share is an increasing function of the recipient’s economic strength.  Ceteris paribus, this effect is stronger for non-egalitarian than for egalitarian IOs” (Bayer et al. 2015, p. 1083)  
+
+The specification of the outcome measure used in Bayer, Marcoux, and Urpelainen (2015), however, normalizes the amount of GEF funding by total project funding: the denominator includes not only cofinancing from the aid-receiving country but also cofinancing from the international implementing agency and possibly from other foreign sources as well.\footnote{In the data that we analyze below, 1,217 out of 1,256 GEF projects for which we can identify cofinancing information have funding from some source other than the GEF. Of those 1,217, 850 have funding from at least three sources: (1) the GEF, (2) the government of the country where the project takes place, and (3) one or more other international entities.  In the Online Appendix to Bayer, Marcoux, and Urpelainen (2015), Tables A45 and A46 study the unnormalized amount of funding that countries receive from the GEF and show a positive correlation with GDP, which we also produce below in Model 5 of Table 3.} Whereas the authors interpret the positive correlation between GDP and GEF financing as indicating that countries with larger economies obtain more GEF financing relative to the amount of money that they contribute to the project (i.e., an increase in the numerator relative to the denominator), we would observe the same correlation if countries with larger economies receive less implementing agency financing relative to the amount of money that they contribute to the project for a given level of GEF funding (i.e., a decrease in the denominator relative to the numerator).  Given the way that the outcome variable is specified in Bayer, Marcoux, and Urpelainen (2015), we do not know how the overall external financing envelope relates to the amount of country cofinancing.\footnote{Bayer, Marcoux, and Urpelainen (2015) note, “Sometimes recipients secure funding from third parties to cover their share of project costs.  This need not present difficulties for our analysis.  Our theory and empirics can account for private capital, as discussed subsequently.  Moreover, if a recipient secures a loan from an international organization, it must pay back the loan” (1085).  We comment on the extent to which loans and grants differ analytically in the discussion section below.} 
+
+In the following section, we describe how we have updated Bayer, Marcoux, and Urpelainen’s (2015) replication data, and we present regression models that show that the proportion of external financing in GEF projects is consistently decreasing in the size of a country’s economy.  We also show that this rate of decrease is indistinguishable across egalitarian and non-egalitarian GEF implementing agencies.  We then change the key explanatory variable to test the prediction that we present above: that a country’s level of development will negatively predict the proportion of external financing in GEF projects.  We find evidence that this is so and show that the correlation is robust to a variety of specifications of the outcome variable and the estimating equation.  We then replicate these results among standard World Bank projects to show more generally that the patterns of country cofinancing that we predict hold for this non-egalitarian institution.  In the concluding section, we discuss how these findings contribute to broader debates about how international organizations operate and about the power of bureaucrats within such organizations.
+
+\section{Data and Methods}
+The data used in Bayer, Marcoux, and Urpelainen (2015) contain information on 2,793 GEF projects approved between 1991 and 2011.\footnote{Of these 2,793 projects, Bayer, Marcoux, and Urpelainen (2015) exclude 538 projects from their analyses, as these projects have a regional or global focus and therefore include multiple countries, such that they are not relevant to the study of bargaining between an international organization and a single state. The resulting dataset includes 2,255 projects, of three types: 964 full-size projects, 447 medium-size projects, and 844 enabling activities. The authors exclude small grants from the analysis “because the Global Environment Facility (GEF) administers them separately and the stakes are too low to test our two hypotheses” (2015, note 4).}   For each of these projects, the dataset includes the GEF’s funding share: a variable falling in the [0,100] interval, which the authors use as a dependent variable to measure bargaining outcome.  The dataset also indicates the implementing agency for each of the projects, which the authors classify as being either the World Bank or another (presumably more egalitarian) agency through a binary indicator variable.\footnote{As noted above, in their Online Appendix, Bayer, Marcoux, and Urpelainen (2015) split the cases by development banks and United Nations organizations and find stronger results (AP62-3).  We estimate our main analyses with the World Bank versus non-World Bank distinction and show the results with the development bank versus United Nations distinction in Table A11 of the Online Appendix.}
+   
+The main independent variable used in the original article is the logarithm of gross domestic product (GDP), measured in constant 2000 dollars, which proxies for the bargaining power of recipient countries.  The data also include an indicator that equals one if the focal area of a GEF project is climate change.  In the original article, this variable proxies for the likely availability of private capital.\footnote{The original paper proposes a second hypothesis: “The IO’s funding share is a decreasing function of the project’s ability to leverage private capital. However, this effect does not depend on the IO’s type” (Bayer, Marcoux, and Urpelainen 2015, 10).  Since a measure of a project’s ability to leverage private capital was unavailable to the authors for all recipients, over all years, they use climate projects as a proxy – arguing that “private capital is most readily available for climate projects, since many such projects offer investment opportunities” (14).  While our paper does not engage with this second hypothesis, we keep the climate-project indicator variable in all model specifications in an effort to faithfully replicate the original analysis.} 
+
+Information on the characteristics and funding of GEF projects is retrievable from the GEF’s website, which features a project database with individual pages for each GEF-sponsored project.  On each project’s web page, there are various pieces of information about the project: the recipient country, the implementing agency, the focal area, and the total cost.  The cost information is split into a GEF grant component and a “cofinancing total” component.  Bayer, Marcoux, and Urpelainen (2015) construct their dependent variable---the GEF’s funding share---as the GEF grant component divided by the total cost. 
+The financial information found on each project page, however, may give an incomplete picture of the ratio of recipient to international financing when used to calculate recipient contributions to projects in this way.  The agency that implements a GEF project often contributes to funding the project as well, meaning that the total project cost information provided on the GEF website includes funding beyond that which is provided by the GEF and the recipient country.  In other words, the “cofinancing total” is both recipient cofinancing and non-GEF international cofinancing. 
+
+For example, imagine a situation in which the GEF funds \$4 million of a \$10 million project.  Following the operationalization strategy from Bayer, Marcoux, and Urpelainen (2015), we would calculate the GEF’s funding share to be 0.4, and describe this as the IO’s funding share---implicitly interpreting the remaining 0.6 to be the recipient country’s share.  Yet the total cofinancing amount (i.e., the total project cost devoid of GEF funding) might consist of funding coming from a number of sources, including not only the recipient country but also the implementing agency and other foreign actors (e.g., other countries’ international development agencies).  It might in fact be the case that the recipient country contributes less money than the GEF does and that the implementing agency and other foreign actors cover the rest of the cofinancing amount.  If this were the case, it would be misleading to use the GEF’s funding share as the dependent variable to assess the hypothesis that wealthier countries obtain more international financing relative to the amount of money that they contribute to the project.
+
+The example above is neither extreme nor uncommon: of the 1,256 projects that we analyze below, 908 of them involve funding from the implementing agency and/or other foreign sources.  For instance, a full-size project in Chad (GEF ID \#1125) implemented by the United Nations has a total cost of \$3,035,000.  The GEF grant is valued at \$1.4 million, or about 46 percent of the total project cost.  The \$1,635,000 of cofinancing is split across \$500,000 from the implementing agency (the United Nations Development Programme); \$1,090,000 from foreign sources (the European Union, the Government of France, and the international nongovernmental organization CARE International); and only \$45,000 from the Government of Chad.  The recipient country funds less than two percent of the total project cost.  Using the GEF’s share of 46 percent---rather than the total international share of 98 percent---to measure the bargaining outcome would suggest that this was a “bad deal” for Chad, whereas the ratio of Chad’s contribution to the total international contribution suggests that Chad had to put relatively little “skin in the game” in exchange for the resources it was receiving.\footnote{As described in footnote 12 above, Bayer, Marcoux, and Urpelainen (2015) propose that other international financing might be considered a component of recipient financing on the grounds that the recipient has acquired these resources to meet its financing obligations.  In this particular case, the resources are most often coming from the very international development organization with which the recipient is negotiating, so they are, in fact, a core component of the bargain, not secondary resources that are obtained later to cover obligations previously committed to by the recipient.}  
+
+\begin{figure}[H]
+	\centering
+	\caption{Cofinancing Breakdown of GEF Project \#1125}
+	\includegraphics[width=0.75\linewidth]{Figure1}
+	\label{fig:figure1}
+\end{figure}
+
+Accounting for the fact that actors other than the GEF and the recipient country contribute funding to GEF projects is essential for understanding whether economically weaker countries are worse off when bargaining with non-egalitarian IOs.  Therefore, we update the Bayer, Marcoux, and Urpelainen (2015) replication data by breaking down the cofinancing into its various sources.  We use the most up-to-date (as of 2016) project document available on each project page on the GEF website to gather information about the sources of cofinancing.  We report amounts committed at the time when the project was approved---rather than disbursed amounts---to more accurately reflect the outcome of the initial bargaining process.\footnote{We provide more details on our coding process in the Online Appendix.}
+  
+Starting from the original replication data set of 2,255 projects, we exclude from our analyses 844 projects labeled as “enabling activities” as they are substantively different from the medium- and full-size projects financed by the GEF.  As noted above, Bayer, Marcoux, and Urpelainen (2015) exclude small projects from their analysis because they argue that the GEF “administers them separately and the stakes are too low to test our two hypotheses” (2015, note 4).  Similarly, we argue that enabling-activity projects differ from regular GEF projects in that they are typically funded almost entirely by a single GEF grant (i.e., there is neither recipient nor international cofinancing) and are intended to aid in preparation for a potential project or to help a country meet the requirements of an environmental treaty.  Interviews with GEF technocrats confirmed our understanding of enabling activities as fundamentally different from medium- and full-size projects.\footnote{Enabling activities are much more formulaic than regular projects and are occasionally approved in blocks for a number of countries. Examples include grants supporting the writing of a report or an assessment, the collecting or compiling of data, or the organizing of workshops and consultations.}   
+
+We are left with a sample of 1,411 projects, of which 155 are dropped from our analysis because we are unable to find accurate information to break down their cofinancing into its components.  The dropped projects are more likely to come from earlier years in the data, possibly due to changing attention to record retention at the GEF.\footnote{Records for older projects tend to include scanned versions of hard-copy documents.  Records from older projects (e.g., those from the early- to mid-1990s) were generally less likely to be available in the GEF’s digital project repository.}  The subset of dropped projects splits into World-Bank-implemented projects and non-World-Bank-implemented projects in a way that mirrors the rest of the sample.\footnote{About 35.8 percent of projects in our sample are implemented by the World Bank, and about 36.3 percent of the projects we drop are implemented by the World Bank ($p < 0.82$). }   Although GEF funding amounts and project costs both increase over time in our sample, the dropped projects do not appear to present concerns for the robustness of our findings.\footnote{We replicated Models 3 and 4 from Table 3 below on the sample of projects for which cofinancing information was available, and the results do not differ in substance or significance.}
+  
+Conversely, the average enabling activity project is in fact quite different from regular projects.  The size of the GEF funding share vis-à-vis the cofinancing share for the average enabling activity project, as compared to the average medium- and full-size project in our sample, is nearly flipped.\footnote{The GEF contributes 15 percent on average to total project costs but 83 percent on average to the cost of enabling activities ($p < 0.01$).  Enabling activities are rarely implemented by the World Bank; in fact, less than five percent of them are.}   Table 1 shows descriptive statistics for the remaining 1,256 projects that enter our analyses.
+
+\begin{singlespace}
+% Please add the following required packages to your document preamble:
+% \usepackage[normalem]{ulem}
+% \useunder{\uline}{\ul}{}
+\begin{table}[H]
+	\centering
+	\caption{Descriptive Statistics for the Funding of the 1,256 Projects in Our Analysis}
+	\label{tab:T1}
+	\resizebox{.75\textwidth}{!}{%
+	\begin{tabular}{rrrrlcccl}
+		\hline
+		\multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  \\
+		\multicolumn{1}{l}{} & \multicolumn{3}{c}{{\ul \textbf{Total Project Cost}}} &  & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  \\
+		\multicolumn{1}{l}{} & \multicolumn{1}{c}{\textit{All}} & \multicolumn{1}{c}{\textit{WB}} & \multicolumn{1}{c}{\textit{Non-WB}} &  & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  \\
+		\textit{Min.} & \$200,000 & \$410,000 & \$200,000 &  & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  \\
+		\textit{Max.} & \$1,363,400,000 & \$1,363,400,000 & \$339,466,000 &  & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  \\
+		\textit{S.D.} & \$83,419,000 & \$129,528,200 & \$27,574,100 &  & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  \\
+		\textit{Mean} & \$30,833,520 & \$59,791,100 & \$14,666,140 &  & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  \\
+		\textit{Median} & \$10,060,000 & \$20,000,000 & \$7,688,478 &  & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  \\ \hline
+		\multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  \\
+		\multicolumn{1}{c}{{\ul \textit{\textbf{}}}} & \multicolumn{3}{c}{{\ul \textbf{GEF Grant}}} & \multicolumn{1}{c}{{\ul \textbf{}}} & \multicolumn{4}{c}{{\ul \textbf{GEF Share (\%)}}} \\
+		\multicolumn{1}{c}{} & \multicolumn{1}{c}{\textit{All}} & \multicolumn{1}{c}{\textit{WB}} & \multicolumn{1}{c}{\textit{Non-WB}} & \multicolumn{1}{c}{\textit{}} & \textit{All} & \textit{WB} & \textit{Non-WB} & \multicolumn{1}{c}{\textit{}} \\
+		\textit{Min.} & \$150,000 & \$230,000 & \$150,000 &  & 1.07 & 1.09 & 1.07 & \textit{Min.} \\
+		\textit{Max.} & \$60,000,000 & \$60,000,000 & \$18,300,000 &  & 100 & 100 & 100 & \textit{Max.} \\
+		\textit{S.D.} & \$5,453,301 & \$7,821,070 & \$2,477,086 &  & 23.35 & 25.57 & 21.95 & \textit{S.D.} \\
+		\textit{Mean} & \$4,448,521 & \$7,096,629 & \$2,970,050 &  & 35.59 & 33.6 & 36.69 & \textit{Mean} \\
+		\textit{Median} & \$3,000,000 & \$5,000,000 & \$2,500,000 &  & 31.31 & 26.85 & 32.21 & \textit{Median} \\ \hline
+		\multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  \\
+		\multicolumn{1}{c}{{\ul \textbf{}}} & \multicolumn{3}{c}{{\ul \textbf{IA Funding}}} & \multicolumn{1}{c}{{\ul \textbf{}}} & \multicolumn{4}{c}{{\ul \textbf{IA Share (\%)}}} \\
+		\multicolumn{1}{c}{\textit{}} & \multicolumn{1}{c}{\textit{All}} & \multicolumn{1}{c}{\textit{WB}} & \multicolumn{1}{c}{\textit{Non-WB}} & \multicolumn{1}{c}{\textit{}} & \textit{All} & \textit{WB} & \textit{Non-WB} & \multicolumn{1}{c}{\textit{}} \\
+		\textit{Min.} & \$0 & \$0 & \$0 &  & 0 & 0 & 0 & \textit{Min.} \\
+		\textit{Max.} & \$349,000,000 & \$349,000,000 & \$141,000,000 &  & 94.67 & 93.75 & 94.67 & \textit{Max.} \\
+		\textit{S.D.} & \$28,542,390 & \$43,347,199 & \$12,052,442 &  & 22.11 & 26.9 & 17.8 & \textit{S.D.} \\
+		\textit{Mean} & \$7,715,928 & \$17,104,506 & \$2,474,167 &  & 12.26 & 19.17 & 8.4 & \textit{Mean} \\
+		\textit{Median} & \$16,000 & \$0 & \$40,000 &  & 0.11 & 0 & 0.44 & \textit{Median} \\ \hline
+		\multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  \\
+		\multicolumn{1}{c}{{\ul \textit{\textbf{}}}} & \multicolumn{3}{c}{{\ul \textbf{Foreign Funding}}} & \multicolumn{1}{c}{{\ul \textbf{}}} & \multicolumn{4}{c}{{\ul \textbf{Foreign Share (\%)}}} \\
+		\multicolumn{1}{c}{} & \multicolumn{1}{c}{\textit{All}} & \multicolumn{1}{c}{\textit{WB}} & \multicolumn{1}{c}{\textit{Non-WB}} & \multicolumn{1}{c}{\textit{}} & \textit{All} & \textit{WB} & \textit{Non-WB} & \multicolumn{1}{c}{} \\
+		\textit{Min.} & \$0 & \$0 & \$0 &  & 0 & 0 & 0 & \textit{Min.} \\
+		\textit{Max.} & \$959,400,000 & \$959,400,000 & \$100,000,000 &  & 87.56 & 87.56 & 82.54 & \textit{Max.} \\
+		\textit{S.D.} & \$30,812,890 & \$50,692,720 & \$5,057,090 &  & 20.28 & 22.41 & 18.97 & \textit{S.D.} \\
+		\textit{Mean} & \$4,318,621 & \$9,261,643 & \$1,558,869 &  & 12.75 & 14.08 & 12.01 & \textit{Mean} \\
+		\textit{Median} & \$0 & \$0 & \$0 &  & 0 & 0 & 0 & \textit{Median} \\ \hline
+		\multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  \\
+		\textit{} & \multicolumn{3}{c}{{\ul \textbf{Recipient Funding}}} &  & \multicolumn{4}{c}{{\ul \textbf{Recipient Share (\%)}}} \\
+		\multicolumn{1}{c}{\textit{}} & \multicolumn{1}{c}{\textit{All}} & \multicolumn{1}{c}{\textit{WB}} & \multicolumn{1}{c}{\textit{Non-WB}} & \multicolumn{1}{c}{\textit{}} & \textit{All} & \textit{WB} & \textit{Non-WB} & \multicolumn{1}{c}{\textit{}} \\
+		\textit{Min.} & \$0 & \$0 & \$0 &  & 0 & 0 & 0 & \textit{Min.} \\
+		\textit{Max.} & \$695,000,000 & \$695,000,000 & \$328,493,000 &  & 97.63 & 95.74 & 97.63 & \textit{Max.} \\
+		\textit{S.D.} & \$46,296,260 & \$71,237,170 & \$19,647,010 &  & 27.35 & 26.31 & 27.31 & \textit{S.D.} \\
+		\textit{Mean} & \$14,350,450 & \$26,328,320 & \$7,663,056 &  & 39.4 & 33.14 & 42.9 & \textit{Mean} \\
+		\textit{Median} & \$2,930,000 & \$3,705,000 & \$2,590,000 &  & 38.4 & 27.11 & 45.03 & \textit{Median} \\ \hline
+		\multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  \\
+		\textit{} & \multicolumn{3}{c}{{\ul \textbf{External Funding}}} &  & \multicolumn{4}{c}{{\ul \textbf{External Share (\%)}}} \\
+		\textit{} & \multicolumn{1}{c}{\textit{All}} & \multicolumn{1}{c}{\textit{WB}} & \multicolumn{1}{c}{\textit{Non-WB}} &  & \textit{All} & \textit{WB} & \textit{Non-WB} & \textit{} \\
+		\textit{Min.} & \$200,000 & \$300,000 & \$200,000 &  & 2.37 & 4.26 & 2.37 & \textit{Min.} \\
+		\textit{Max.} & \$1,229,500,000 & \$1,229,500,000 & \$150,670,000 &  & 100 & 100 & 100 & \textit{Max.} \\
+		\textit{S.D.} & \$50,518,090 & \$79,552,840 & \$14,059,170 &  & 27.35 & 26.31 & 27.31 & \textit{S.D.} \\
+		\textit{Mean} & \$16,483,070 & \$33,462,780 & \$7,003,086 &  & 60.6 & 66.86 & 57.1 & \textit{Mean} \\
+		\textit{Median} & \$4,921,256 & \$11,195,000 & \$3,507,500 &  & 61.6 & 72.89 & 54.97 & \textit{Median} \\ \hline
+	\end{tabular}%
+	}
+\end{table}
+\end{singlespace}
+
+\subsection{Dependent Variables}
+In our analyses, we employ six related dependent variables.  First, in order to replicate the results in Bayer, Marcoux, and Urpelainen (2015), we begin by using the same dependent variable found in that article: the proportion of total project financing provided by the GEF.  We seek to verify that the substantive results from the original article remain unchanged when the analysis is performed on our data.\footnote{As discussed above, for our analyses, we will exclude enabling activities and code funding amounts directly from project documentation.}
+   
+Second, we operationalize the outcome variable as a measure of the share of project funding provided by all sources outside the recipient country (“external funding”).  Insofar as we are interested in learning which countries obtain better deals when bargaining with different types of international organizations, we want to see which countries are able to obtain more external funding (i.e., from the GEF, the implementing agency, and other foreign sources).  Funding from the recipient country’s national and subnational governments, as well as from other domestic sources, such as the private sector, NGOs, or project beneficiaries are considered “recipient funding.”  
+
+Third, we look at the combined resources coming from the GEF and the implementing agency.  Fourth, we look only at the resources coming from the implementing agency.  Fifth, we examine resources that come from other foreign sources (i.e., international donors or non-governmental organizations that are not the implementing agency or the GEF).  Finally, we look at the recipient’s contribution to the project.
+
+Table 1 and Figure 2 describe the distributions of these six dependent variables in the data, including the subsamples of projects implemented by the World Bank or a non-World Bank agency.  In both cases, the majority of project funds for the average project come from external sources.  When the World Bank is the implementing agency, it provides about a quarter of project funding on average, whereas non-World Bank agencies provide around 15 percent of project funding on average.  When the World Bank is the implementing agency, the recipient country provides approximately one-third of project funding on average, whereas recipient countries provide over 40 percent of project funding on average when another agency is the implementer.\footnote{This difference in recipient country funding is statistically significant ($p < 0.01$).}   The average amount of funding coming from other foreign sources is similar across the subsets (14 percent for World Bank projects and 12 percent for non-World Bank projects, $p < 0.10$), and the median project in either subset includes no other foreign funding at all.  
+
+\subsection{Independent Variables}
+To study the predictors of bargaining outcomes, we first follow Bayer, Marcoux, and Urpelainen (2015) in operationalizing recipient countries’ bargaining power with log-transformed GDP in constant 2000 dollars.  Subsequently, we use recipient countries’ level of development as our key explanatory variable, measuring this as log-transformed GDP per capita in constant 2000 dollars.  As stated earlier, we expect poorer countries to receive better bargains. 
+
+We use the same indicator variable as the original article to divide projects into those implemented by a World Bank agency and those implemented by another agency.  Additionally, we create another indicator variable to divide projects into those implemented by any development bank (all of which have non-egalitarian voting structures) and those implemented by a UN agency (all of which have egalitarian voting structures).  
+
+\begin{figure}[H]
+	\centering
+	\caption{Distribution of Main Dependent Variables (World Bank vs. Non-World Bank)}
+	\includegraphics[width=0.85\linewidth]{Figure2}
+	\label{fig:figure2}
+\end{figure}
+
+ Table 2 presents a list of all implementing agencies in our sample and their classification under the “World Bank” and “development bank” indicators; we list the number of projects in the data implemented by each agency.  Figure 3 shows the financing breakdown of the average project implemented by the World Bank versus that of the average project implemented by another type of agency.  It also shows the financing breakdown of the average project implemented by a development bank (World Bank or otherwise) versus that of the average project implemented by a UN agency.  Note that on average, projects that are not implemented by the World Bank---and in particular, projects implemented by a UN agency---tend to receive a greater share of financing from the recipient country and a smaller share from the implementing agency. 
+ 
+ Following the model specification in Bayer, Marcoux, and Urpelainen (2015), we also include an indicator to identify projects whose focal area is climate change; we control for total project cost, political corruption (operationalized by the ICRG measure), and political institutions in the recipient country (operationalized with the Democracy and Dictatorship coding from Cheibub, Gandhi, and Vreeland (2010)); and we include year and region fixed effects in all regression models.
+
+\begin{singlespace}
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+% \usepackage[normalem]{ulem}
+% \useunder{\uline}{\ul}{}
+\begin{table}[H]
+	\centering
+	\caption{Classification of Implementing Agencies}
+	\label{tab:T2}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{lcccc}
+			\hline
+			\multicolumn{1}{c}{{\ul \textbf{Implementing Agency}}} & {\ul \textbf{World Bank}} & {\ul \textbf{Dev. Bank}} & {\ul \textbf{N / 1,256$\dagger$}} & {\ul \textbf{N / 1,411}} \\
+			Asian Development Bank & 0 & 1 & 21 & 22 \\
+			African Development Bank & 0 & 1 & 4 & 4 \\
+			European Bank for Reconstruction and Development & 0 & 1 & 7 & 8 \\
+			Food and Agriculture Organization of the United Nations & 0 & 0 & 14 & 15 \\
+			Inter-American Development Bank & 0 & 1 & 17 & 20 \\
+			International Bank for Reconstruction and Development & 1 & 1 & 443 & 497 \\
+			International Development Association & 1 & 1 & 7 & 7 \\
+			International Fund for Agricultural Development & 0 & 0 & 31 & 32 \\
+			United Nations Development Programme & 0 & 0 & 580 & 654 \\
+			United Nations Environment Programme & 0 & 0 & 91 & 105 \\
+			United Nations Industrial Development Organization & 0 & 0 & 41 & 47 \\ \hline
+			\multicolumn{5}{l}{\textit{$\dagger$As discussed, we are unable to find accurate information to break down the cofinancing of 155 projects out of the}} \\
+			\multicolumn{5}{l}{\textit{1,411 full- and medium-size projects in the original sample. We are left with 1,256 projects to analyze.}}
+		\end{tabular}%
+	}
+\end{table}
+\end{singlespace}
+
+\begin{figure}[H]
+	\centering
+	\caption{Average Funding Shares for 1,256 Projects in Authors’ Sample by Type of Implementing Agency}
+	\includegraphics[width=.8\linewidth]{Figure3}
+	\label{fig:figure3}
+\end{figure}
+
+\section{Analyses and Results}
+Our analysis begins with a replication of the main model specification in Bayer, Marcoux, and Urpelainen (2015) and then goes on to revise and expand on it in a number of consequential ways.  There are three key elements of our analyses that are worth highlighting before discussing the results.  First,we use several operationalizations of the outcome variable to capture the results of the bargaining over project funding.  We start by following Bayer, Marcoux, and Urpelainen (2015) in using the GEF share of total project cost (\textit{GEF/Total}) as the outcome variable in Models 1-6.  However, as discussed, this variable alone is not informative about the amount of funding that all of the international organizations involved in a project provide, as sources other than the GEF usually provide some project funding.  Thus, we also use the share of all non-recipient funding (\textit{External/Total}) as the outcome variable in Models 7-8, as well as the share of funding provided by the two main international organizations, the GEF and the implementing agency (\textit{GEF+IA/Total}), and then each individual funding source’s share (\textit{IA/Total}; \textit{Foreign/Total}; \textit{Recipient/Total}) in Models 9-16.  This allows us to gain insight into how each funder’s share of the total project cost is affected by recipient wealth. 
+
+Second, each model is estimated separately for projects with the World Bank as the implementing agency (the top panels of Tables 3 and 4) and projects with an implementing agency other than the World Bank (the central panels of Tables 3 and 4), again following the original paper.  We also estimate all of our models on the full sample of projects using an interaction term to test whether the slope on GDP varies between projects implemented by the World Bank and by non-World Bank agencies (the bottom panels of Tables 3 and 4).  
+
+Third, we repeat the analyses with the substitution of GDP per capita for GDP as the measure of the key recipient-country characteristic predicting the financing breakdown (all even-numbered Models 2-16).  We argue that staff in international development organizations negotiating projects are more likely to pay attention to a country’s level of wealth rather than to the overall size of its economy. 
+
+All models are ordinary-least squares regressions with standard errors clustered by country to account for the fact that a single country can have multiple projects within the dataset.  As mentioned above, all models include year fixed effects and region fixed effects.
+
+Table 3 reports the result of the first set of analyses.  Model 1 replicates the results from Bayer, Marcoux, and Urpelainen’s third OLS model (2015: 1093).  It is estimated using their dataset and their variables and replicates their results exactly.  Models 3 and 5 share the same specification as Model 1 but are estimated using our data set of 1,411 projects described above.  While Model 3 is limited to the projects in our dataset, it uses the variables from Bayer, Marcoux, and Urpelainen’s (2015) replication dataset to measure the GEF’s funding share, the World Bank indicator, and the total project costs.\footnote{The GEF share variable in the replication data set has missing data for four projects which we were able to code; this explains the discrepancy in the number of observations in Models 3-4 versus Models 5-6.}
+
+
+\begin{singlespace}
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage{graphicx}
+% \usepackage[normalem]{ulem}
+% \useunder{\uline}{\ul}{}
+\begin{table}[H]
+	\centering
+	\caption{Effect of Recipient Wealth on GEF and External Share of Project Cost}
+	\label{tab:T3}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{rcccccccc}
+			\hline
+			Model Set: & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) \\
+			\multirow{2}{*}{Dependent Variable:} & \textbf{GEF /} & \textbf{GEF /} & \textbf{GEF /} & \textbf{GEF /} & \textbf{GEF /} & \textbf{GEF /} & \textbf{External /} & \textbf{External /} \\
+			& \textbf{Total} & \textbf{Total} & \textbf{Total} & \textbf{Total} & \textbf{Total} & \textbf{Total} & \textbf{Total} & \textbf{Total} \\
+			Data Set: & BMU & BMU & Mixed$\dagger$ & Mixed$\dagger$ & Updated & Updated & Updated & Updated \\
+			Wealth Measure: & GDP & GDPpc & GDP & GDPpc & GDP & GDPpc & GDP & GDPpc \\ \hline
+			\multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+			{\ul \textbf{WB Subsample}} &  &  &  &  &  &  &  &  \\
+			\textit{GDP 2000 (log)} & 1.246** &  & 1.409** &  & 1.206** &  & -3.621*** &  \\
+			\textit{} & (0.470) &  & (0.447) &  & (0.417) &  & (0.779) &  \\
+			\textit{GDPpc 2000 (log)} &  & 0.700 &  & 0.976 &  & 1.114 &  & -9.157*** \\
+			\textit{} &  & (1.246) &  & (1.104) &  & (0.999) &  & (1.774) \\
+			\textit{Climate Project} & -3.079 & -3.189 & -4.249* & -4.427* & -5.506* & -5.704* & -9.287** & -8.556* \\
+			\textit{} & (1.883) & (1.858) & (1.751) & (1.722) & (2.305) & (2.291) & (3.419) & (3.380) \\
+			\textit{Project Cost (log)} & -11.12*** & -10.87*** & -9.730*** & -9.459*** & -10.30*** & -10.05*** & -1.507 & -2.159* \\
+			\textit{} & (0.538) & (0.528) & (0.599) & (0.592) & (0.765) & (0.762) & (1.018) & (0.996) \\ \hline
+			Observations & 416 & 416 & 390 & 390 & 394 & 394 & 354 & 354 \\
+			R\textsuperscript{2} & 0.746 & 0.741 & 0.670 & 0.662 & 0.633 & 0.629 & 0.280 & 0.287 \\ \hline
+			\multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+			{\ul \textbf{Non-WB Subsample}} &  &  &  &  &  &  &  &  \\
+			\textit{GDP 2000 (log)} & -0.179 &  & 0.491 &  & 1.333** &  & -3.465*** &  \\
+			\textit{} & (0.424) &  & (0.407) &  & (0.394) &  & (0.799) &  \\
+			\textit{GDPpc 2000 (log)} &  & -1.624** &  & -1.323 &  & -0.692 &  & -9.082*** \\
+			\textit{} &  & (0.562) &  & (0.747) &  & (0.869) &  & (1.364) \\
+			\textit{Climate Project} & 0.694 & 0.643 & -2.560* & -2.465* & -3.461** & -3.253** & -11.51*** & -11.39*** \\
+			\textit{} & (0.909) & (0.908) & (1.128) & (1.128) & (1.143) & (1.139) & (2.767) & (2.763) \\
+			\textit{Project Cost (log)} & -12.33*** & -12.31*** & -10.38*** & -10.16*** & -11.64*** & -11.23*** & -4.557*** & -5.105*** \\
+			\textit{} & (0.283) & (0.278) & (0.424) & (0.420) & (0.517) & (0.524) & (1.205) & (1.170) \\ \hline
+			Observations & 1079 & 1079 & 589 & 589 & 589 & 589 & 537 & 537 \\
+			R\textsuperscript{2} & 0.832 & 0.833 & 0.664 & 0.665 & 0.610 & 0.604 & 0.290 & 0.305 \\ \hline
+			\multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+			{\ul \textbf{Full Sample}} &  &  &  &  &  &  &  &  \\
+			\textit{GDP 2000 (log)} & -0.305 &  & 0.422 &  & 1.049* &  & -3.422*** &  \\
+			\textit{} & (0.422) &  & (0.440) &  & (0.427) &  & (0.765) &  \\
+			\textit{GDPpc 2000 (log)} &  & -1.807** &  & -1.669* &  & -0.858 &  & -9.000*** \\
+			\textit{} &  & (0.563) &  & (0.693) &  & (0.760) &  & (1.230) \\
+			\textit{WB Project} & -47.13*** & -19.07*** & -23.80* & -19.12** & -9.041 & -10.79 & 17.50 & 16.79 \\
+			\textit{} & (8.888) & (5.557) & (10.01) & (5.942) & (9.873) & (6.182) & (17.38) & (9.290) \\
+			\textit{GDP 2000 (log) * WB} & 1.913*** &  & 1.010* &  & 0.461 &  & -0.290 &  \\
+			\textit{} & (0.366) &  & (0.406) &  & (0.399) &  & (0.712) &  \\
+			\textit{GDPpc 2000 (log) * WB} &  & 2.576** &  & 2.778** &  & 1.794* &  & -0.959 \\
+			\textit{} &  & (0.823) &  & (0.857) &  & (0.867) &  & (1.307) \\
+			\textit{Climate Project} & -0.115 & -0.0580 & -3.045*** & -3.079*** & -4.189*** & -4.212*** & -10.41*** & -10.08*** \\
+			\textit{} & (0.731) & (0.726) & (0.878) & (0.835) & (1.093) & (1.085) & (1.883) & (1.819) \\
+			\textit{Project Cost (log)} & -12.08*** & -12.01*** & -10.06*** & -9.768*** & -10.95*** & -10.59*** & -3.014*** & -3.604*** \\
+			\textit{} & (0.253) & (0.255) & (0.363) & (0.353) & (0.383) & (0.397) & (0.658) & (0.656) \\ \hline
+			Observations & 1495 & 1495 & 979 & 979 & 983 & 983 & 891 & 891 \\
+			R\textsuperscript{2} & 0.825 & 0.825 & 0.638 & 0.637 & 0.597 & 0.592 & 0.279 & 0.291 \\ \hline
+			\multicolumn{9}{l}{\textit{*p-value \textless 0.05, **p-value \textless 0.01, ***p-value \textless 0.001.  Standard errors in parenthesis.}} \\
+			\multicolumn{9}{l}{\textit{All models include region and year fixed effects, and control for democracy and corruption.}} \\
+			\multicolumn{9}{l}{\textit{$\dagger$Dependent variables, World Bank indicator, and total project cost are from BMU's data; sample of projects is authors'.}} \\
+			\multicolumn{9}{l}{\textit{The authors coded GEF share information for 4 additional projects compared to BMU's variables. This explains the discrepancy}} \\
+			\multicolumn{9}{l}{\textit{in observations in Models 3-4 versus Models 5-6. Of the 983 projects for which covariates are available, the authors were unable}} \\
+			\multicolumn{9}{l}{\textit{to code cofinancing breakdown information for 92 (of which 40 WB projects and 52 non-WB projects). This explains the}} \\
+			\multicolumn{9}{l}{\textit{discrepancy in the number of observations in Models 5-6 versus Models 7-16. When Models 5-6 are estimated on the same}} \\
+			\multicolumn{9}{l}{\textit{sample as Models 7-16 (891 projects, of which 354 WB projects and 537 non-WB projects) as a robustness check, the results}} \\
+			\multicolumn{9}{l}{\textit{remain substantively unchanged.}}
+		\end{tabular}%
+	}
+\end{table}
+\end{singlespace}
+
+
+Conversely, Model 5 uses our re-coded version of the project cost variables but retains the proportion of GEF funding in total project funding as the outcome variable.\footnote{The replication models with GEF share as the dependent variable (Models 1-6) do not require information on the breakdown of the cofinancing amount.  Thus, they can be estimated on the sample that includes those projects for which we were unable to code cofinancing information.  Of the 983 projects for which covariates are available, we were unable to code cofinancing information for 92 (40 World Bank projects and 52 non-World Bank projects).  This explains the discrepancy in the number of observations in Models 5-6 versus Models 7-16.  However, when Models 5-6 are estimated on the same, smaller sample as Models 7-16 (891 projects, 354 World Bank projects and 537 non-World Bank projects), the results remain substantively unchanged.}							
+   
+Models 3 and 5 largely replicate the main finding from Bayer, Marcoux, and Urpelainen (2015): for projects with the World Bank as implementer, the proportion of project financing provided by the GEF as a share of total project costs increases with the size of the recipient country’s economy.  In Model 5 (where we use our updated coding of the funding totals on our smaller sample of projects), however, we find this same relationship for projects with non-World Bank implementers, and the partial correlation between GDP and the share of GEF funding in the project is roughly equal for both subsamples.  While the results of Model 3 indicate that reducing the sample to exclude enabling activities does not meaningfully affect the key relationship, the results of Model 5 indicate that our recoding of the GEF share, World Bank project indicator, and total project cost does significantly change the observed partial correlation between GDP and GEF share for non-World Bank projects.
+
+Models 2, 4, and 6 mirror the specifications of Models 1, 3, and 5, respectively, but substitute GDP per capita for GDP as the main explanatory variable.  In this case, even when we otherwise use the same specification, data, and variables as the original Bayer, Marcoux, and Urpelainen (2015) analyses, we do not find evidence that more developed countries enter into GEF projects where GEF financing makes up a larger proportion of the total project costs (Model 2).  In the non-World Bank subset, Model 2 provides evidence that more developed countries receive less GEF financing for similarly sized projects, although the similarly negative coefficient is not significant in Models 4 and 6. 
+
+As discussed above, the outcome variable in Models 1-6 (\textit{GEF/Total}) does not differentiate non-GEF external funding from recipient-country funding in accounting for total project costs.  Therefore, in Models 7-8, we modify the outcome variable to focus on the share of external funding (i.e., all funding that does not come from the recipient country) in the project.  In these specifications, we do not find evidence that countries with larger (Model 7) or more developed (Model 8) economies receive a greater share of external funding when bargaining with a non-egalitarian organization.  On the contrary, as the recipient country becomes wealthier or more developed, the proportion of funding secured from sources external to the country decreases.  This finding holds regardless of the type of implementing organization.  Specifically, as shown in Model 7, doubling a country’s GDP results in a decrease in the proportion of external funding by 3.6 percentage points when the World Bank is the implementing agency. When looking among projects implemented by a non-World Bank agency, doubling a country’s GDP results in a decrease in the proportion of external funding by an extremely similar 3.5 percentage points.  Analogously, Model 8 shows that doubling a country’s GDP per capita results in a decrease in the proportion of external funding by 9.2 percentage points when the World Bank is the implementing agency and by 9.1 percentage points when the implementer is not a World Bank agency.  
+
+The bottom panel of Table 3 reports the results of the same eight models, now using an interaction term.  Confirming the results from the top two panels, the interaction term is only significant in the models using the GEF share of project financing as the outcome variable.  Once we shift to studying all external project funding in Models 7-8, the size of a recipient country’s economy or its level of economic development alters the bargaining outcome by decreasing the project funding share that the recipient is able to secure from external sources.  Consistent with our second hypothesis, this finding holds regardless of what type of organization implements the project (i.e., the interaction term is not distinguishable from zero in these models).  
+
+In other words, when using a specification of the outcome variable that more adequately captures the diverse origins of a GEF project’s funding package, we find consistent evidence that (i) as either the size of a country’s economy or its level of development increases, the level of external financing relative to country cofinancing decreases, and (ii) it does so regardless of whether the project is implemented by the World Bank or by a non-World Bank organization. 
+
+Table 4 reports the results of model specifications with outcome variables that specifically capture funding from each source: the two prominent international organizations involved in each project, i.e. the GEF and the implementing agency (Models 9-10); the implementing agency or agencies alone (Models 11-12); all other foreign sources (Models 13-14); and all recipient sources (Models 15-16).  These model specifications are estimated on the sample of all medium- and full-size projects for which we are able to code cofinancing information and for which covariates are available. 
+
+Models 9-10 do not show evidence that the share of project costs paid by the GEF and the main implementing agency increases as recipient wealth increases.  On the contrary, the coefficients representing the effect of either the size (GDP) or level of development (GDP per capita) of the recipient country’s economy suggest a negative relationship.  The coefficients for the interaction terms in the full-sample estimations of Models 9-10 are also not significant. 
+
+Moreover, recipient economy size and level of development are negatively related to the share of total project costs provided by either the implementing agency alone or by any other foreign sources---with statistically significant negative coefficients across both types of implementer (Models 10-14).  In the analyses interacting the key explanatory variable and the implementer type, we again find evidence of a negative and significant effect of recipient wealth and an interaction term that cannot be distinguished from zero.\footnote{The interaction term in Model 14 seems to indicate that when more developed recipients bargain with the World Bank they receive smaller shares of other foreign funding.}   Conversely, recipient GDP and GDP per capita appear to have a positive and significant effect on the funding share provided by the recipient country itself, again regardless of implementer type (Models 15-16). 
+
+\begin{singlespace}
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage{graphicx}
+% \usepackage[normalem]{ulem}
+% \useunder{\uline}{\ul}{}
+\begin{table}[H]
+	\centering
+	\caption{Effect of Recipient Wealth on Each Funder's Share of Project Cost	}
+	\label{tab:T4}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{rcccccccc}
+			\hline
+			Model Set: & (9) & (10) & (11) & (12) & (13) & (14) & (15) & (16) \\
+			\multirow{2}{*}{Dependent Variable:} & \textbf{GEF+IA /} & \textbf{GEF+IA /} & \textbf{IA /} & \textbf{IA /} & \textbf{Foreign /} & \textbf{Foreign /} & \textbf{Recipient /} & \textbf{Recipient /} \\
+			& \textbf{Total} & \textbf{Total} & \textbf{Total} & \textbf{Total} & \textbf{Total} & \textbf{Total} & \textbf{Total} & \textbf{Total} \\
+			Data Set: & Updated & Updated & Updated & Updated & Updated & Updated & Updated & Updated \\
+			Wealth Measure: & GDP & GDPpc & GDP & GDPpc & GDP & GDPpc & GDP & GDPpc \\ \hline
+			\multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+			{\ul \textbf{WB Subsample}} &  &  &  &  &  &  &  &  \\
+			\textit{GDP 2000 (log)} & -0.480 &  & -1.946** &  & -3.142*** &  & 3.621*** &  \\
+			\textit{} & (0.689) &  & (0.667) &  & (0.635) &  & (0.779) &  \\
+			\textit{GDPpc 2000 (log)} &  & -2.500 &  & -4.294** &  & -6.657*** &  & 9.157*** \\
+			\textit{} &  & (1.641) &  & (1.486) &  & (1.510) &  & (1.774) \\
+			\textit{Climate Project} & -3.479 & -3.394 & -0.400 & -0.00132 & -5.808 & -5.162 & 9.287** & 8.556* \\
+			\textit{} & (3.658) & (3.638) & (4.063) & (4.029) & (3.289) & (3.256) & (3.419) & (3.380) \\
+			\textit{Project Cost (log)} & -4.263*** & -4.305*** & 6.193*** & 5.821*** & 2.756** & 2.146** & 1.507 & 2.159* \\
+			\textit{} & (0.901) & (0.866) & (0.800) & (0.754) & (0.838) & (0.807) & (1.018) & (0.996) \\ \hline
+			Observations & 354 & 354 & 354 & 354 & 354 & 354 & 354 & 354 \\
+			R\textsuperscript{2} & 0.185 & 0.187 & 0.207 & 0.206 & 0.251 & 0.242 & 0.281 & 0.287 \\ \hline
+			\multicolumn{1}{l}{\textit{}} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+			{\ul \textbf{Non-WB Subsample}} &  &  &  &  &  &  &  &  \\
+			\textit{GDP 2000 (log)} & -0.487 &  & -1.790*** &  & -2.978*** &  & 3.465*** &  \\
+			\textit{} & (0.604) &  & (0.501) &  & (0.525) &  & (0.799) &  \\
+			\textit{GDPpc 2000 (log)} &  & -4.858*** &  & -3.758** &  & -4.225** &  & 9.082*** \\
+			\textit{} &  & (1.279) &  & (1.120) &  & (1.340) &  & (1.364) \\
+			\textit{Climate Project} & -5.606* & -5.343* & -1.975 & -1.975 & -5.907** & -6.047** & 11.513*** & 11.389*** \\
+			\textit{} & (2.335) & (2.307) & (1.837) & (1.855) & (1.826) & (1.873) & (2.767) & (2.763) \\
+			\textit{Project Cost (log)} & -7.568*** & -7.498*** & 4.120*** & 3.798*** & 3.012*** & 2.393*** & 4.557*** & 5.105*** \\
+			\textit{} & (1.222) & (1.196) & (1.000) & (0.962) & (0.614) & (0.596) & (1.205) & (1.170) \\ \hline
+			Observations & 537 & 537 & 537 & 537 & 537 & 537 & 537 & 537 \\
+			R\textsuperscript{2} & 0.312 & 0.328 & 0.128 & 0.126 & 0.175 & 0.145 & 0.290 & 0.305 \\ \hline
+			\multicolumn{1}{l}{\textit{}} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+			{\ul \textbf{Full Sample}} &  &  &  &  &  &  &  &  \\
+			\textit{GDP 2000 (log)} & -0.749 &  & -2.014*** &  & -2.673*** &  & 3.422*** &  \\
+			\textit{} & (0.585) &  & (0.446) &  & (0.490) &  & (0.765) &  \\
+			\textit{GDPpc 2000 (log)} &  & -4.880*** &  & -3.955*** &  & -4.119** &  & 9.000*** \\
+			\textit{} &  & (1.155) &  & (1.026) &  & (1.279) &  & (1.230) \\
+			\textit{WB Project} & -2.474 & -1.292 & 1.020 & 11.26 & 19.97 & 18.08* & -17.498 & -16.792 \\
+			\textit{} & (15.62) & (9.876) & (12.82) & (9.154) & (13.540) & (7.872) & (17.379) & (9.290) \\
+			\textit{GDP 2000 (log) * WB} & 0.607 &  & 0.321 &  & -0.898 &  & 0.290 &  \\
+			\textit{} & (0.624) &  & (0.496) &  & (0.533) &  & (0.712) &  \\
+			\textit{GDPpc 2000 (log) * WB} &  & 1.861 &  & -0.341 &  & -2.820** &  & 0.959 \\
+			\textit{} &  & (1.411) &  & (1.241) &  & (1.069) &  & (1.307) \\
+			\textit{Climate Project} & -4.414* & -4.309* & -1.086 & -0.937 & -5.994*** & -5.771*** & 10.409*** & 10.080*** \\
+			\textit{} & (1.997) & (1.973) & (1.920) & (1.904) & (1.502) & (1.537) & (1.883) & (1.819) \\
+			\textit{Project Cost (log)} & -5.998*** & -5.922*** & 5.166*** & 4.824*** & 2.984*** & 2.317*** & 3.014*** & 3.604*** \\
+			\textit{} & (0.602) & (0.598) & (0.587) & (0.580) & (0.467) & (0.439) & (0.658) & (0.656) \\ \hline
+			Observations & 891 & 891 & 891 & 891 & 891 & 891 & 891 & 891 \\
+			R\textsuperscript{2} & 0.230 & 0.241 & 0.222 & 0.220 & 0.191 & 0.171 & 0.279 & 0.291 \\ \hline
+			\multicolumn{9}{l}{\textit{*p-value \textless 0.05, **p-value \textless 0.01, ***p-value \textless 0.001.  Standard errors in parenthesis.}} \\
+			\multicolumn{9}{l}{\textit{All models include region and year fixed effects, and control for democracy and corruption.}} \\
+			\multicolumn{9}{l}{\textit{Of the 983 projects for which covariates are available, the authors were unable to code cofinancing breakdown information for 92}} \\
+			\multicolumn{9}{l}{\textit{(of which 40 WB projects and 52 non-WB projects). This explains the discrepancy in the number of observations in Models 5-6 versus}} \\
+			\multicolumn{9}{l}{\textit{Models 7-16. When Models 5-6 are estimated on the same sample as Models 7-16 (891 projects, of which 354 WB projects and 537}} \\
+			\multicolumn{9}{l}{\textit{non-WB projects) as a robustness check, the results remain substantively unchanged.}}
+		\end{tabular}%
+	}
+\end{table}
+\end{singlespace} 							
+
+In other words, wealthier, more developed recipients enter into GEF projects that feature smaller funding shares from the implementing agency and from other foreign sources; they cover larger proportions of the project with domestic resources.  Taken together, our analyses of the updated data support our understanding that development organizations provide better deals to less economically prosperous countries, and we do not find differential effects for GEF projects implemented by egalitarian and non-egalitarian agencies.\footnote{In the Online Appendix, we show that these results hold when splitting the sample into projects implemented by development banks versus projects implemented by U.N. agencies.} 
+
+In order to provide a more intuitive understanding of what these results mean for the profiles of GEF projects for different types of countries, Figure 4 shows the predicted values of the funding shares from different sources for countries at the 25th and 75th percentile of GDP and GDP per capita, for World Bank and non-World Bank projects.\footnote{The model specifications used to compute the predicted values are Models 5-6 in Table 3 for the GEF’s share and Models 11-12 for the IA’s share, 13-14 for the foreign share, and 15-16 for the recipient’s share, all in Table 4. As the predicted values come from separate OLS models---one with each of the four funding shares as dependent variables---they do not always sum to 100 percent. However, we scale them to do so to facilitate interpretation of the figure; a version of this figure without the scaling is available in the Online Appendix.}  What emerges is that wealthy countries, at the 75th percentile of GDP and GDPpc, are predicted to provide a greater share of total project costs than countries at the 25th percentile. Conversely, both wealthy and poor countries provide a greater funding share when projects are implemented by a non-World Bank agency than they do when projects are implemented by the resource-rich World Bank.  
+
+\begin{figure}[H]
+	\centering
+	\caption{Predicted Funding for Recipients at the 25th and 75th Percentile of GDP and GDP Per Capita}
+	\includegraphics[width=.8\linewidth]{Figure4}
+	\label{fig:figure4}
+\end{figure}
+
+In the Online Appendix, we conduct additional analyses to explore the consistency of the results.  Since the outcome variables in Tables 3 and 4 are proportions bounded by 0 and 1, OLS may not be appropriate.  In Tables A3 and A4, we replicate the analyses using fractional logistic regression models: all of the results hold under this alternative modeling strategy.  In Table A6, we use compositional data models with log-ratio outcome variables, which better capture the trade-offs across different components of a whole (Aitchison 1986; Winters and Martinez 2015).  These models consistently show that GDP and GDP per capita both negatively predict the amount of external funding (operationalized in all five different ways) relative to the amount of recipient funding for both World Bank and non-World Bank implementing agencies.  Because the compositional data models force us to drop observations where one component has a zero value, we also run a set of models where we add a small number to the zero values, largely confirming the results of the original compositional data models. 
+
+In Table A10, we present models regressing log-transformed recipient funding on recipient GDP and GDP per capita, controlling for external funding and total project cost. We find that recipient funding increases as recipients get wealthier or more economically developed, regardless of implementing agency. Finally, in Table A11, we compare development banks to U.N. agencies; as described above, this division of the data continues to suggest that egalitarian and non-egalitarian organizations operate in the same fashion, arranging less international funding for wealthier countries. 
+
+Taken together, the results of the analyses presented in this section and the robustness checks outlined in the Online Appendix challenge the idea that wealthier, more developed countries are able to extract more from non-egalitarian international organizations when bargaining over the funding of GEF projects. On the contrary, we find compelling evidence that countries with lower GDP and GDP per capita get a greater share of their GEF project costs provided by the international organizations involved in the project and other external sources––regardless of international organization type. 
+
+
+\section{The Division of Project Financing in Standard WB Projects}
+In the analyses just presented, we study the division of financing within Global Environment Facility projects, where funding comes from the GEF and often also from the implementing agency and the country in which the project is being executed and sometimes from other international financing sources.  In this section, we make use of data from Winters and Streitfeld (2018) about the division of financing within standard World Bank projects (i.e., projects that draw on the resources of the International Development Association (IDA) and/or the International Bank for Reconstruction and Development (IBRD) and not primarily on trust funds or special facilities like the GEF) to see whether the claim from Bayer, Marcoux, and Urpelainen (2015) that non-egalitarian institutions demand more financing from economically weaker countries finds support in this data. 
+
+Above, we have argued that we do not expect decisions at the level of development project design to vary with the egalitarian or non-egalitarian voting structure of international development organizations.  Conversely, if it is the case that institutions with non-egalitarian voting rules discriminate in their financing demands at the level of individual projects, we should find evidence of this discrimination when looking at World Bank projects that are not mediated by GEF procedures, given that the World Bank is the archetypal example of an international development organization with a non-egalitarian voting structure.
+
+The Winters and Streitfeld (2018) dataset contains financing information for 4,307 World Bank projects approved during the 1999-2016 period.  For projects approved between 1999 and 2010, those authors manually coded the financing information from Project Appraisal Documents or other project documentation, and for projects approved between 2011 and 2016, the authors used a web-scraping tool to retrieve the information from the online portal to the World Bank Projects and Operations Database.  The authors code the financing information for each project into whether the source is the World Bank, another international development agency, or an entity within the recipient country.
+  
+We study two key outcome variables: the proportion of World Bank financing in total project costs and the proportion of external financing in total project costs. For comparability, we use specifications similar to those found above in the analyses of GEF project funding.  We estimate an initial set of linear regression models in which we regress the outcome variables on log-transformed GDP PPP, controlling for the log-transformed total project cost, a measure of democracy, a measure of corruption, and region and year fixed effects.\footnote{We measure democracy here using the Polity index, and we measure corruption using the control of corruption measure from the Worldwide Governance Indicators.  We choose these measures, as compared to those used above, because of the greater temporal coverage.}   We then estimate a second set of models in which we substitute log-transformed GDP per capita PPP as a measure of level of development in place of the measure of the size of the economy. Table 5 presents the results of these analyses. 
+
+In Model 17, there is a positive but not statistically significant relationship between the size of a country’s economy and the overall proportion of project funding that comes from the World Bank.  In Model 19, however, when we look at all external funding, the relationship becomes negative and statistically significant: external funding makes up a smaller proportion of project financing in countries with larger economies. When we study a country’s level of development (GDP per capita), instead of the size of its economy (GDP), in Models 18 and 20, we see the same relationship as observed in the set of analyses of GEF projects: as countries become wealthier, the proportion of total project costs financed by external actors becomes smaller (although the relationship is not significant when looking only at the proportion of project financing coming from the World Bank), and the ratio of external financing to recipient-country financing is decreasing (whether looking only at World Bank financing or at overall external financing).\footnote{Breaking down projects by whether they are administered by the World Bank’s concessional lending wing, the International Development Association (IDA), or its near-market-rate lending wing, the International Bank for Reconstruction and development (IBRD), we see that the pattern for GDP per capita holds for both parts of the World Bank; GDP, however, negatively predicts the share of external financing in IBRD projects but positively predicts the share of external funding in IDA projects.  This variation is worthy of further exploration.}   Once again, this is evidence that international development organizations, including even the World Bank with its non-egalitarian voting structure, favor less economically developed countries at the level of project design.
+
+\begin{singlespace}
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage{graphicx}
+\begin{table}[H]
+	\centering
+	\caption{Effect of Recipient Wealth on Bargaining Outcome for World Bank Projects}
+	\label{tab:T5}
+	\resizebox{.8\textwidth}{!}{%
+		\begin{tabular}{rcccc}
+			\hline
+			Model Set: & (17) & (18) & (19) & (20) \\
+			\multirow{2}{*}{Dependent Variable:} & \textbf{WB /} & \textbf{WB /} & \textbf{External  /} & \textbf{External  /} \\
+			& \textbf{Total} & \textbf{Total} & \textbf{Total} & \textbf{Total} \\
+			Data Set: & Winters and Streitfeld & Winters and Streitfeld & Winters and Streitfeld & Winters and Streitfeld \\
+			Wealth Measure: & GDP PPP & GDPpc PPP & GDP PPP & GDPpc PPP \\ \hline
+			\textit{} &  &  &  &  \\
+			\textit{GDP PPP (log)} & 1.256 &  & -1.381* &  \\
+			\textit{} & (0.776) &  & (0.636) &  \\
+			\textit{GDP pc PPP (log)} &  & -0.469 &  & -5.772*** \\
+			\textit{} &  & (1.924) &  & (1.556) \\
+			\textit{Project Cost (log)} & -9.890*** & -8.921*** & -6.541*** & -6.848*** \\
+			\textit{} & (0.605) & (0.559) & (0.571) & (0.643) \\ \hline
+			Observations & 3,376 & 3,376 & 3,375 & 3,375 \\
+			Adj. R\textsuperscript{2} & 0.333 & 0.328 & 0.401 & 0.413 \\ \hline
+			\multicolumn{5}{l}{\textit{*p-value \textless 0.05, **p-value \textless 0.01, ***p-value \textless 0.001.  Robust standard errors in parenthesis.}} \\
+			\multicolumn{5}{l}{\textit{All models include region and year fixed effects, and control for democracy and corruption.}}
+		\end{tabular}%
+	}
+\end{table}	
+\end{singlespace}		
+
+Parallel to the set of robustness checks we conduct for the analyses of GEF projects, we present additional analyses of these World Bank data in the Online Appendix. In Table A5, we replicate the specifications in Table 5 using fractional logistic regression models (Table A5) and find that the results hold under this alternative modeling strategy. In Table A8, we use the log-ratio of World Bank financing relative to recipient-country financing, and the log-ratio of external financing relative to recipient-country financing as outcome variables; we find that the size of a country’s economy is an insignificant (but still negative) predictor of the log-ratio of World Bank funding to recipient-country funding and is a negative and significant predictor of the log-ratio of external funding to recipient-country funding. When we re-estimate these models adding a small number to the zero values, so as not to drop the observations where one component of the ratio has a zero value, we largely confirm the results of the original compositional data models.
+   
+Focusing on a sample of World Bank projects does not allow us to speak to how the non-egalitarian World Bank compares to an egalitarian international development organization, such as the United Nations Development Programme.  In other words, it might be the case that an egalitarian organization will favor poorer, less economically developed countries in project design to an even greater extent than the World Bank does.  What this analysis does highlight is the lack of evidence for the claim that wealthier, more developed recipients are able to strike better deals than their poorer counterparts when bargaining with the quintessential non-egalitarian international development organization, the World Bank.    
+
+\section{Discussion}
+Having found that both GEF and World Bank projects involving smaller or poorer countries involve more external financing relative to financing provided by the country where the project takes place, we now consider three issues that will help to situate these results: (i) the role of concessional and non-concessional loans in bargaining over project financing; (ii) the correlation between bureaucratic incentives and the egalitarian or non-egalitarian structure of international organizations; and (iii) the persistent finding that the GEF funding share is increasing in the size of the recipient’s economy for both projects implemented by World Bank and non-World Bank agencies (Model 5).\footnote{We thank the reviewers for drawing our attention to these issues.}
+  
+First, we are cognizant that not all external funding comes in the form of grants. In the context of GEF projects, the GEF funding share is always a grant. The funding provided by implementing agencies and other external donors, however, does at times include concessional and even non-concessional loans. For the purposes of analyzing the results of the bargaining over project financing, the question arises as to whether funding that eventually has to be repaid---at least in part---by the recipient country should be considered a contribution from the international organization or donor providing the loan or rather a contribution from the recipient itself.
+ 
+To obtain a sense of the empirical prevalence of loans and grants in the external financing components of GEF projects, we recoded the same random sample of projects found in the Online Appendix to Bayer, Marcoux, and Urpelainen (2015), examining the kind of financing provided by external sources.\footnote{Of the 50 projects recoded by Bayer, Marcoux, and Urpelainen (2015), 33 are left after removing enabling activities and a duplicate project; of these remaining 33 projects, we found information on grant and loan components for 21. More detailed discussion available in the Online Appendix.}  On the one hand, we find that external sources usually provide funding in the form of grants. On the other hand, when loans are provided, those loans tend to be larger on average than the grants that are provided in GEF projects.\footnote{See Table A2 in the Online Appendix.}
+  
+There is variation in whether external financing is in the form of grants, mirroring GEF grant financing, or loans.  We argue that, overall, we should consider both grants and loans as part of the funding share provided by their source---i.e., a loan from the implementing agency should be considered as part of the implementing agency’s funding share and not as a contribution by the recipient country, even if the recipient country eventually will have to repay the loan.  Treating concessional loans (and sometimes non-concessional loans) as foreign aid provided to a country is standard practice in the development literature: these flows are regarded as resources that countries obtain, not as debts that they take on.  We think that this standard practice is correct, as bargaining to gain concessional funds that will need to be repaid as a later date is conceptually distinct from agreeing to contribute resources that need to be provided immediately. 
+
+At the same time, it is worth highlighting that not all recipient funding is provided in the form of fungible cash.  Recipient contributions in development projects often are in-kind contributions.  Such financing might effectively be less costly to the recipient than providing the same amount in cash.\footnote{In fact, our conversations with GEF staff highlighted that the in-kind contributions of recipient countries often include activities that the country would have carried out regardless of the project.}  Just as we do not distinguish grants versus loans with the category of external funding, our analysis also does not account for this distinction on the recipient side.
+
+Secondly, our research originates in the fact that existing literature proposes variation across egalitarian and non-egalitarian international organizations and particularly in Bayer, Marcoux, and Urpelainen’s (2015) argument that non-egalitarian organizations will try to extract more bargaining surplus from weaker countries. This literature builds on long-running debates about the amount of influence that shareholders have within international organizations, and we believe that our results contribute to ongoing efforts to delineate the realms in which those powerful states that fund international development organizations (and hold predominant voting power in the non-egalitarian ones) drive organizational behavior (Stone 2011, 2013).  
+
+As we argued above, while we expect powerful member states to drive overall institutional design questions (e.g., Clegg 2013) and macro-level allocation trends (e.g., Andersen et al. 2006; Fleck and Kilby 2006; Copelovitch 2010), we believe that operational staff likely have more discretion with day-to-day operational decisions (Barnett and Finnemore 1999; Martin 2006; Chwieroth 2013; Winters and Streitfeld 2018).
+  
+Some studies even suggest that staff may have discretion in broader domains.  Chwieroth (2013) provides evidence that IMF lending programs are larger when there is ideological kinship between the IMF technocrats and country interlocutors negotiating the program and that this effect is larger in magnitude than the importance of the borrowing country to the United States.  Buntaine, Parks, and Buch (2017) find that countries receiving concessional aid in the environment and natural-resource management sector from the World Bank are asked to make easier-to-achieve institutional commitments than those countries receiving non-concessional lending.  In line with our thoughts above, these authors suggest a prominent role for disbursement pressure.
+
+Other studies, however, find that, to the contrary, the influence of power principals runs deep.  Malik and Stone (2018) present evidence that suggests that operational staff may disburse World Bank project funds more rapidly when multinational corporations from the United States or Japan are involved in project implementation, a finding that implies staff-level reactivity to international pressures.  Kilby (2009) shows how macroeconomic performance is a less powerful predictor of World Bank structural adjustment loan disbursements in countries that vote with the United States at the United Nations, suggesting that staff decisions to slow disbursements are subject to external influence, while Kilby (2013) argues that World Bank staff prepare projects more quickly when the borrower is more geopolitically important.
+
+The institutional check on staff discretion lies with the board of directors for the relevant international development organization.  If the board of directors disapproves of what the staff has done, they may refuse to approve a project.  As noted by Martin (2006) and Chwieroth (2013), boards of directors, however, are unlikely to veto projects, given their limited capacity to challenge the development expertise of staff making an argument for a certain project design.
+
+Our empirical results suggest a need for caution in asserting that powerful states drive behavior all the way down (e.g., driving non-egalitarian organizations to try to extract more resources from countries with smaller economies). Overall, we see that countries with larger economies contribute more resources of their own and receive fewer resources from the international organization with which they bargain.  Such results are coherent with the claim that specific project-level decisions are largely in the hands of project staff within international development organizations and that these staff making project-level decisions are likely motivated by development objectives and therefore reluctant to discriminate against poorer countries.\footnote{We do not, of course, have direct evidence that these are, in fact, the set of preferences at play; collecting micro-level data on this question is a worthy enterprise for future research.}   
+
+We would not claim that there are no differences at all across such organizations: the voting structure in non-egalitarian organizations almost certainly offers the largest shareholders more leverage than smaller shareholders over the guiding policies of the organization.  We have not found evidence, however, that arranging the funding envelope for a project is such an area.  For counterpart funding in both GEF and World Bank projects, our results are in line with a model of technocrats who are balancing development concerns against career concerns motivated by disbursement pressure: not requiring significant counterpart commitments from poor countries helps staff get money out the door in a development-oriented fashion and makes their projects more likely to meet with success.\footnote{As Chwieroth (2013), looking at IMF programs, similarly argues, “Informal career advancement incentives motivate the staff to negotiate large programs that are likely to be successful” (267).} 
+  
+Lastly, it is important to acknowledge that––even in the model specifications estimated on our updated data––we continue to find a positive and significant relationship between the GEF funding share and the wealth of recipient countries.  Whereas Bayer, Marcoux, and Urpelainen (2015) find such a relationship only for the World Bank, we fine a similar relationship for both projects implemented by the World Bank and those implemented by non-World Bank agencies in our data (Model 5).  
+
+Figure 4 provides some insights as to what is happening.  In countries with smaller GDPs, the GEF contributes around one-third of total project costs, while the recipient contributes another one-third if the World Bank is not the implementing agency and only about one-fourth if the World Bank is the implementing agency.  The implementing agency and other foreign sources provide the remaining funding.  For countries with larger economies, the funding provided by the implementing agency and other external sources shrinks substantially, while the recipient country contribution increases substantially: up to 45 percent for projects where the World Bank is not the implementer and from one-quarter to one-third of total project costs when the World Bank is the implementer.  For both the World Bank and non-World Bank cases, the reduced funding from external sources is mostly compensated by increased recipient country financing and there is some additional compensation from GEF financing.  Overall, this pattern is in line with the idea that implementing agency staff are being judicious users of their own resources and choosing to expend them at relatively larger rates in poorer countries. 
+
+\section{Conclusion}
+In the literature on international organizations, scholars have studied the effects that the formal rules defining member state influence over those organizations have on the behavior of the organization.  Some have argued that formal voting structures drive the behavior of international organizations, examining either the influence of the most important voting member or coalitions of important voting members on what the institutions do (e.g., Andersen et al. 2006; Copelovitch 2010; Lim and Vreeland 2013; Vreeland and Dreher 2014).  In particular, in the case of international development organizations, the literature provides evidence that patterns of overall funding allocations often reflect the interests of the most powerful member states. 
+
+Building on this basic idea, Bayer, Marcoux, and Urpelainen (2015) argue that egalitarian and non-egalitarian voting schemes in international development organizations will affect the way in which the organizations bargain with the potential recipients of their development projects, proposing that non-egalitarian organizations will strive to drive harder bargains with less-powerful states.  We recode and reanalyze the data that those authors used, a set of medium- and full-size GEF projects approved between 1991 and 2011.  While all are GEF projects, some are implemented by the World Bank, some by other development banks, and some by UN agencies.  Through a variety of model specifications, we show that wealthier, more developed recipients consistently have a smaller share of total project costs covered by the GEF, the implementing agency, and other external actors than do poorer, less developed countries.  This holds irrespective of what type of organization implements the project.  
+
+We conduct a similar analysis on a sample of over 3,300 World Bank projects approved between 1999 and 2016.  The World Bank is the quintessential non-egalitarian organization.  We find no evidence, however, that the Bank favors wealthier recipients when bargaining over project funding.  On the contrary, we find that the Bank funds a greater share of project costs for projects in poorer, less developed countries. Taken together, both analyses show that, when bargaining with non-egalitarian international organizations, neither economically stronger nor wealthier recipients strike “better” deals than impoverished countries.  We take this as an indication that bureaucratic agents within both egalitarian and non-egalitarian organizations pursue developmental ends to the best of their ability when designing development projects.
+
+\newpage
+\section*{Works Cited}
+\begin{singlespace}
+\begin{enumerate}
+ 
+
+	\item Aitchison, J. (1986). The Statistical Analysis of Compositional Data. New York: Chapman and Hall.
+	\item Andersen, T. B., Hansen, H., \& Markussen, T. (2006). US politics and World Bank IDA-lending. Journal of Development Studies, 42(5), 772–794. doi:10.1080/00220380600741946
+	\item Azam, J.-P., \& Laffont, J.-J. (2003). Contracting for aid. Journal of development economics, 70(1), 25–58.
+	\item Barnett, M. N., \& Finnemore, M. (1999). The Politics, Power, and Pathologies of International Organizations. International Organization, 53(4), 699–732.
+	\item Bayer, P., Marcoux, C., \& Urpelainen, J. (2015). When International Organizations Bargain: Evidence from the Global Environment Facility. Journal of Conflict Resolution, 59(6), 1074–1100.
+	\item Briggs, R. C. (2012). Electrifying the base? Aid and incumbent advantage in Ghana. Journal of Modern African Studies, 50(4), 603–624. doi:10.1017/S0022278X12000365
+	\item Briggs, R. C. (2014). Aiding and Abetting: Project Aid and Ethnic Politics in Kenya. World Development, 64, 194–205. doi:10.1016/j.worlddev.2014.05.027
+	\item Briggs, R. C. (2017). Does Foreign Aid Target the Poorest? International Organization, 71(01), 187–206. doi:10.1017/S0020818316000345
+	\item Bueno de Mesquita, B., \& Smith, A. (2007). Foreign Aid and Policy Concessions. Journal of Conflict Resolution, 51(2), 251–284.
+	\item Bueno de Mesquita, B., \& Smith, A. (2009). A Political Economy of Aid. International Organization, 63, 309–340.
+	\item Buntaine, M. T., Parks, B. C., \& Buch, B. P. (2017). Aiming at the Wrong Targets: The Domestic Consequences of International Efforts to Build Institutions. International Studies Quarterly, 61(2), 471–488. doi:10.1093/isq/sqx013
+	\item Cheibub, J. A., Gandhi, J., \& Vreeland, J. R. (2010). Democracy and dictatorship revisited. Public Choice, 143(1–2), 67–101. doi:10.1007/s11127-009-9491-2
+	\item Chwieroth, J. M. (2013). “The silent revolution:” How the staff exercise informal governance over IMF lending. The Review of International Organizations, 8(2), 265–290. doi:10.1007/s11558-012-9154-9
+	\item Clegg, L. (2013). Controlling the World Bank and IMF: Shareholders, Stakeholders, and the Politics of Concessional Lending. New York: Palgrave Macmillan.
+	\item Copelovitch, M. S. (2010). Master or Servant? Common Agency and the Political Economy of IMF Lending. International Studies Quarterly, 54(1), 49–77.
+	\item Dietrich, S. (2013). Bypass or Engage? Explaining Donor Delivery Tactics in Foreign Aid Allocation. International Studies Quarterly, 57(4), 698–712. doi:10.1111/isqu.12041
+	\item Dietrich, S. (2016). Donor Political Economies and the Pursuit of Aid Effectiveness. International Organization, 70(1), 65–102.
+	\item Easterly, W. (2002). The Cartel of Good Intentions: The Problem of Bureaucracy in Foreign Aid. Journal of Policy Reform, 5(4), 223–250.
+	\item Fleck, R. K., \& Kilby, C. (2006). World Bank Independence: A model and Statistical Analysis of U.S. Influence. Review of Development Economics, 10(2), 224–240.
+	\item Global Environment Facility. (2016). GEF Project and Program Cycle Policy (No. GEF/C.50/08/Rev.01). Washington, D.C.: Global Environment Facility. http://www.thegef.org/sites/default/files/council-meeting-documents/EN\_GEF.C.50.08.Rev\_.01\_GEF\_Project\_and\_Program\_Cycle\_Policy\_0.pdf. Accessed 29 April 2019	
+	\item Godfrey, M., Sophal, C., Kato, T., Vou Piseth, L., Dorina, P., Saravy, T., et al. (2002). Technical assistance and capacity development in an aid-dependent economy: The experience of Cambodia. World Development, 30(3), 355–373.
+	\item Honig, D. (2018). Navigation by judgment: Why and when top down management of foreign aid doesn’t work. New York: Oxford University Press.
+	\item Jablonski, R. S. (2014). How aid targets votes: the impact of electoral incentives on foreign aid distribution. World Politics, 66(2), 293–330.
+	\item Kilby, C. (2009). The political economy of conditionality: An empirical analysis of World Bank loan disbursements. Journal of Development Economics, 89(1), 51–61. doi:10.1016/j.jdeveco.2008.06.014
+	\item Kilby, C. (2013). The political economy of project preparation: An empirical analysis of World Bank projects. Journal of Development Economics, 105, 211–225. doi:10.1016/j.jdeveco.2013.07.011
+	\item Knack, S., \& Rahman, A. (2007). Donor fragmentation and bureaucratic quality in aid recipients. Journal of Development Economics, 83(1), 176–197.
+	\item Kotchen, M. J., \& Negi, N. K. (2016). Cofinancing in Environment and Development: Evidence from the Global Environment Facility. The World Bank Economic Review, lhw048. doi:10.1093/wber/lhw048
+	\item Lim, D. Y. M., \& Vreeland, J. R. (2013). Regional Organizations and International Politics: Japanese Influence over the Asian Development Bank and the UN Security Council. World Politics, 65(01), 34–72. doi:10.1017/S004388711200024X
+	\item Malik, R., \& Stone, R. W. (2018). Corporate Influence in World Bank Lending. Journal of Politics, 80(1), 103–118.
+	\item Marcoux, C., Peeters, C., \& Tierney, M. J. (2012). Principles, Principals, and Power: Institutional Reform and Aid Allocation at the Global Environment Facility (GEF). College of William \& Mary. https://pdfs.semanticscholar.org/bce2/41e527fc369ff2cd0081cc52f583a1a15e23.pdf. Accessed 26 March 2017
+	\item Martens, B. (2005). Why do aid agencies exist? Development policy review, 23(6), 643–663.
+	\item Martin, L. L. (2006). Distribution, information, and delegation to international organizations: the case of IMF conditionality. In D. G. Hawkins, D. A. Lake, D. L. Nielson, \& M. J. Tierney (Eds.), Delegation and Agency in International Organizations (pp. 140–164). New York: Cambridge University Press.
+	\item McLean, E. V. (2012). Donors’ Preferences and Agent Choice: Delegation of European Development Aid: Donors’ Preferences and Agent Choice. International Studies Quarterly, 56(2), 381–395. doi:10.1111/j.1468-2478.2012.00727.x
+	\item Miller, S. J., \& Yu, B.-K. (2012). Mobilizing Resources for Supporting Environmental Activities in Developing Countries: The Case of the GEF Trust Fund. Inter-American Development Bank Workign Paper Series, IDB-WP-329. https://publications.iadb.org/handle/11319/4091. Accessed 5 May 2017
+	\item Milner, H. V. (2006). Why Multilateralism? Foreign Aid and Domestic Principal-Agent Problems. In D. G. Hawkins, D. A. Lake, D. L. Nielson, \& M. J. Tierney (Eds.), Delegation and Agency in International Organizations (pp. 107–139). New York: Cambridge University Press.
+	\item Morgenthau, H. J. (1962). A Political Theory of Foreign Aid. American Political Science Review, 56(2), 301–309.
+	\item Nash, J. F. (1950). The Bargaining Problem. Econometrica, 18(2), 155–162.
+	\item Nielson, D. L., \& Tierney, M. J. (2003). Delegation to international organizations: Agency theory and World Bank environmental reform. International organization, 57(2), 241–276.
+	\item Over, A. M. (1981). On the care and feeding of a gift horse: The recurrent cost problem and optimal reduction of recurrent inputs. Center for Development Economics, Williams College. http://mpra.ub.uni-muenchen.de/10405/1/MPRA\_paper\_10405.pdf. Accessed 20 January 2014
+	\item Pallage, S., \& Robe, M. A. (2015). Counterpart funding requirements and the foreign aid procyclicality puzzle. Oxford Review of Economic Policy, 31(3–4), 462–480. doi:10.1093/oxrep/grv035
+	\item Schneider, C. J., \& Tobin, J. L. (2016). Portfolio Similarity and International Development Aid. International Studies Quarterly, 60(4), 647–664. doi:10.1093/isq/sqw037
+	\item Sharma, P. (2013). Bureaucratic imperatives and policy outcomes: The origins of World Bank structural adjustment lending. Review of International Political Economy, 20(4), 667–686.
+	\item Shin, W., Kim, Y., \& Sohn, H.-S. (2017). Do Different Implementing Partnerships Lead to Different Project Outcomes? Evidence from the World Bank Project-Level Evaluation Data. World Development, 95, 268–284. doi:10.1016/j.worlddev.2017.02.033
+	\item Stone, R. W. (2011). Controlling institutions: International organizations and the global economy. New York: Cambridge University Press.
+	\item Stone, R. W. (2013). Informal governance in international organizations: Introduction to the special issue. The Review of International Organizations, 8(2), 121–136. doi:10.1007/s11558-013-9168-y
+	\item Vreeland, J. R., \& Dreher, A. (2014). The Political Economy of the United Nations Security Council: Money and Influence. New York: Cambridge University Press.
+	\item Wang, Y. (2016). The Effect of Bargaining on US Economic Aid. International Interactions, 42(3), 479–502. doi:10.1080/03050629.2016.1112189
+	\item Wang, Y. (2018). Bargaining matters: an analysis of bilateral aid to developing countries. Journal of International Relations and Development, 21(1), 1–21. doi:10.1057/jird.2016.8
+	\item Weaver, C. (2008). Hypocrisy Trap: The World Bank and the Poverty of Reform. Princeton, NJ: Princeton University Press.
+	\item Winters, M. S. (2010). Accountability, Participation and Foreign Aid Effectiveness. International Studies Review, 12(2), 218–243. doi:10.1111/j.1468-2486.2010.00929.x
+	\item Winters, M. S. (2012). The obstacles to foreign aid harmonization: lessons from decentralization support in Indonesia. Studies in Comparative International Development, 47(3), 316–341.
+	\item Winters, M. S. (2019). Too Many Cooks in the Kitchen? The Division of Financing in World Bank Projects and Project Performance. Politics and Governance, 7(2).
+	\item Winters, M. S., \& Martinez, G. (2015). The Role of Governance in Determining Foreign Aid Flow Composition. World Development, 66, 516–531. doi:10.1016/j.worlddev.2014.09.020
+	\item Winters, M. S., \& Streitfeld, J. D. (2018). Splitting the Check: Explaining Patterns of Counterpart Commitments in World Bank Projects. Review of International Political Economy, 25(6), 884–908.
+	\item Woods, N. (2006). The Globalizers: The IMF, the World Bank and Their Borrowers. Ithaca, NY: Cornell University Press.
+\end{enumerate}
+\end{singlespace}
+
+\end{document}
